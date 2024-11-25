@@ -1,6 +1,6 @@
 export function convertToKhmerNumbers(input: number | string): string {
-  if (!input) {
-    throw new TypeError("No input received!")
+  if (!input && input !== 0 && input !== "") {
+    throw new TypeError("No input received!");
   }
   // Define a mapping of Arabic numerals to Khmer numerals
   const khmerDigits = ["០", "១", "២", "៣", "៤", "៥", "៦", "៧", "៨", "៩"];
